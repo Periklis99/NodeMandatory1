@@ -2,11 +2,20 @@
     display: flex;
     justify-content: space-between;
     height: 30px;
-    background-color:rgb(26, 219, 26);;
+    background-color:rgb(26, 219, 26);
     padding-left: 0px;
+    
 }
 .navElse{
   padding-right: 0px;
+}
+.footer{
+  height: 19px;
+  background-color:rgb(26, 219, 26);
+  position:absolute;
+  bottom:0;
+  width: 98%;
+  text-align: right;
 }
 
 h1{
