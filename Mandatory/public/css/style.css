@@ -1,0 +1,21 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    background-color:rgb(26, 219, 26);;
+    padding-left: 0px;
+}
+.navElse{
+  padding-right: 0px;
+}
+
+h1{
+  color:rgb(251, 255, 0);
+  text-align: center;
+}
+h3{
+  color:rgb(26, 219, 26);
+  padding-left: 170px;
+  text-align: center;
+  width: 800px;
+}

@@ -1,0 +1,14 @@
+<h1>SSR(Server Side Rendering)!!</h1>
+<h3>What is SSR?  Server-side rendering (SSR) is an application's ability to convert HTML files on the server into a fully rendered HTML page for the client.
+     The web browser submits a request for information from the server, which instantly responds by sending a fully rendered page to the client.</h3>
+     <h3>Is node js server-side JavaScript safe? 
+        The answer is no, using JavaScript on the server side using Node. js (or even other server-side JavaScript platforms, which are not common now) doesn't make it less secure than other server-side platforms.</h3>
+        <h3>How do we implement SSR to Node? First for the client's side you send the response like that app.get('/SSR', (req, res) => {
+            res.sendFile('/SSR/SSR.html');
+        });</h3>
+        <h3>Then we need to import "fs" which is a tool that converting Html files into Strings
+            and then type "const mySSRPage = fs.readFileSync('/SSR/SSR.html').toString();" and then we just use this const to our response path 
+            like that app.get('/SSR', (req, res) => { 
+                res.send(mySSRpage);
+            });
+        </h3>

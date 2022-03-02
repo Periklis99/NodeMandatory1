@@ -1,0 +1,22 @@
+<h1>Heroku!!</h1>
+<h3>Heroku is a platform as a service that enables developers to build,
+     run, and operate applications entirely in the cloud.</h3>
+<h3>In order to deploy an app using Node we need to follow some steps
+    and here they are! Before we begin we have to be signed up to Heroku,Github and have pushed everything in to our Github account from the app we want to deploy!
+</h3>
+<h3> 
+   1. In the app.js file we need to add " process.env.PORT || "3000" " at the app.listen line of code because in many environments (e.g. Heroku), and as a convention, you can set the environment variable PORT to tell your web server what port to listen on. So process. env. PORT || 3000 means: whatever is in the environment variable PORT, or 3000 if there's nothing there. 
+</h3>
+<h3>
+    2. Heroku requires a start script in our package.json file to start our application.
+    That means we have to create a start script in our package.json file to instruct heroku on how to start the application.
+</h3>
+<h3>
+    3. We have to crate a procfile and add this line of code inside "web: node app.js"
+</h3>
+<h3>
+    4. In the terminal we have to install Heroku CLI by typing "sudo npm install —classic heroku" . After that we type "heroku login" in order to login to our heroku account.
+    Then we need to create a heroku application by typing "heroku create" 
+this will deploy the application and give you a link after you deploy something .
+And finally last step is to push all code from local master branch to heroku by typing "git push heroku master". Now we are ready to open our application and everybody can access in the web by the link we get provided.
+</h3>
